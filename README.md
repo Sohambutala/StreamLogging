@@ -1,4 +1,4 @@
-# Dockerized ELK Stack with Kafka Integration
+# Dockerized Elastic Stack with Kafka Integration
 This repository contains a Docker Compose setup to run an integrated Elastic (Elasticsearch, Logstash, Kibana, Beats) stack with Apache Kafka, including Zookeeper, Schema Registry, and Confluent Control Center, enhanced with Metricbeat for monitoring. This setup is ideal for development, testing, and small-scale production environments for real-time log analysis and visualization.
 
 ## Features
