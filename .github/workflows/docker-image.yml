@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag streamlogger:$(date +%s)
+      run: docker-compose build . docker-compose --tag streamlogger:$(date +%s)
