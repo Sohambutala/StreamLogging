@@ -1,0 +1,25 @@
+metricbeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+
+metricbeat.modules:
+- module: system
+  period: 10s
+  metricsets:
+    - cpu
+    - memory
+    - network
+    - process
+    - process_summary
+  process.include_top_n:
+    by_cpu: 5
+    by_memory: 5
+  processes: ['.*']
+  cpu.metrics:  ["percentages"]
+  core.metrics: ["percentages"]
+
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_HOSTS:elasticsearch:9200}"]
+
+setup.kibana:
+  host: "kibana:5601"
