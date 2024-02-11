@@ -18,8 +18,8 @@ Basic understanding of Docker, ELK Stack, and Apache Kafka
 1. Clone the Repository
 ```bash
 Copy code
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Sohambutala/StreamLogging.git
+cd StreamLogging
 ```
 2. Start the Services
 ```bash
