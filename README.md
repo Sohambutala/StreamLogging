@@ -29,9 +29,9 @@ This command starts all the services defined in the docker-compose.yml file in d
 ```
 
 3. Access the Services
-Kibana: Open `http://localhost:5601` to access Kibana's web interface.
-Confluent Control Center: Visit `http://localhost:9021` to manage and monitor your Kafka cluster.
-Elasticsearch: Accessible at `http://localhost:9200`.
+- Kibana: Open `http://localhost:5601` to access Kibana's web interface.
+- Confluent Control Center: Visit `http://localhost:9021` to manage and monitor your Kafka cluster.
+- Elasticsearch: Accessible at `http://localhost:9200`.
 
 4. Monitor with Metricbeat
 Metricbeat is configured to collect metrics from Docker containers and the host system. Check the Metricbeat dashboards in Kibana for insights.
