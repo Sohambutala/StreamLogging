@@ -17,13 +17,11 @@ Basic understanding of Docker, ELK Stack, and Apache Kafka
 ## Quick Start
 1. Clone the Repository
 ```bash
-Copy code
 git clone https://github.com/Sohambutala/StreamLogging.git
 cd StreamLogging
 ```
 2. Start the Services
 ```bash
-Copy code
 docker-compose up -d
 This command starts all the services defined in the docker-compose.yml file in detached mode.
 ```
@@ -47,7 +45,6 @@ Metricbeat: `./metricbeat/metricbeat.yml`
 ## Stopping the Services
 To stop all services and remove containers, networks, and volumes created by docker-compose up, run:
 ```bash
-Copy code
 docker-compose down -v
 ```
 ## Contributing
